@@ -16,5 +16,13 @@ export default function(){
   </View>
   </SafeAreaView>
   )
+
+
+  const styles = StyleSheet.create({
+    App: {
+      
+    }
+  })
+
 }
 
