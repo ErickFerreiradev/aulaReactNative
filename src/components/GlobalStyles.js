@@ -8,7 +8,9 @@ export default StyleSheet.create({
     },
 
     textG: {
-        fontSize: 32
+        fontSize: 32,
+        padding: 20,
+        textAlign: 'center',
     }
 })
 
