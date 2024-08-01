@@ -6,16 +6,22 @@ import GlobalStyles from './components/GlobalStyles'
 // import Teste from './components/primeiro'
 // import MinMax from './components/MinMax'
 // import Aleatorio from './components/aleatorio'
-import Titulo from './components/Titulo'
-
+// import Titulo from './components/Titulo'
+// import Botao from './components/Botao'
+// import Contador from './components/Contador'
+// import Pai from './components/direta/Pai'
+import IndPai from './components/indireta/IndPai'
 
 export default function(){
   return (
   <SafeAreaView style={GlobalStyles.androidSafeArea}>
   <View>
-      <Titulo principal='Cadastro Produto' secundario = 'Tela de cadastro do Produto'/>
-      
-      {/* <Aleatorio min={1} max={60} />
+    <IndPai />
+      {/* <Titulo principal='Cadastro Produto' secundario = 'Tela de cadastro do Produto'/>
+      <Pai />
+      <Contador inicial={100}/>
+      <Botao />
+      <Aleatorio min={1} max={60} />
       <Teste />
       <X />
       <Comp2 />
