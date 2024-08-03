@@ -12,15 +12,17 @@ import GlobalStyles from './components/GlobalStyles'
 // import Contador from './components/Contador'
 // import Pai from './components/direta/Pai'
 // import IndPai from './components/indireta/IndPai'
-import Contv2 from './components/ContadorV2'
+// import Contv2 from './components/ContadorV2'
+import Plataforma from './components/Diferenciar'
 
 export default function(){
   return (
   <SafeAreaView style={GlobalStyles.androidSafeArea}>
   <View>
-
-    <Contv2/>
+      <Plataforma />
+      
       {/* <Titulo principal='Cadastro Produto' secundario = 'Tela de cadastro do Produto'/>
+    <Contv2/>
     <IndPai />
       <Pai />
       <Contador inicial={100}/>
