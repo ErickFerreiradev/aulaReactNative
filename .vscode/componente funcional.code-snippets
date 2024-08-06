@@ -9,7 +9,8 @@
 			"",
 			"export default props => {",
 			"    return (",
-			"       <Text style={GlobalStyles.textG}>1</Text>",
+			"       <Text style={GlobalStyles.textG}>",
+			"       </Text>",
 			"       )",
 			"}",
 			"$2"

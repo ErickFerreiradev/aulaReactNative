@@ -2,7 +2,9 @@ import React from 'react'
 import { Text, SafeAreaView, StyleSheet, View } from 'react-native'
 import GlobalStyles from './components/GlobalStyles'
 
-
+import Usuariologado from './components/Usuariologado'
+// import Familia from './components/relacao/Familia'
+// import Membro from './components/relacao/Membros'
 // import X, { Comp2, Comp3 } from './components/Multi'
 // import Teste from './components/primeiro'
 // import MinMax from './components/MinMax'
@@ -13,15 +15,31 @@ import GlobalStyles from './components/GlobalStyles'
 // import Pai from './components/direta/Pai'
 // import IndPai from './components/indireta/IndPai'
 // import Contv2 from './components/ContadorV2'
-import Plataforma from './components/Diferenciar'
+// import Plataforma from './components/Diferenciar'
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 
 export default function(){
   return (
   <SafeAreaView style={GlobalStyles.androidSafeArea}>
   <View>
-      <Plataforma />
       
+      <ListaProdutosV2 />
+
       {/* <Titulo principal='Cadastro Produto' secundario = 'Tela de cadastro do Produto'/>
+      <ListaProdutos />
+    <Usuariologado usuario={  {nome: 'Gui', email: 'gui@gui.com'}  }/>
+    <Usuariologado usuario={  {nome: 'Gui'}  }/>
+    <Usuariologado usuario={null}/>
+    <Usuariologado usuario={{}}/>
+      <Familia>
+        <Membro nome ='Bia' sobrenome='Arruda'/>
+        <Membro nome ='Carlos' sobrenome='Arruda'/>
+      </Familia>
+      <Familia>
+        <Membro nome ='Ana' sobrenome='Souza'/>
+        <Membro nome ='Caio' sobrenome='Souza'/>
+      </Familia>
+      <Plataforma />
     <Contv2/>
     <IndPai />
       <Pai />
