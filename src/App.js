@@ -2,7 +2,9 @@ import React from 'react'
 import { Text, SafeAreaView, StyleSheet, View } from 'react-native'
 import GlobalStyles from './components/GlobalStyles'
 
-import Usuariologado from './components/Usuariologado'
+import FlexboxV1 from './components/layouts/FlexboxV1'
+// import DigiteSeuNome from './components/DigiteSeuNome'
+// import Usuariologado from './components/Usuariologado'
 // import Familia from './components/relacao/Familia'
 // import Membro from './components/relacao/Membros'
 // import X, { Comp2, Comp3 } from './components/Multi'
@@ -16,16 +18,17 @@ import Usuariologado from './components/Usuariologado'
 // import IndPai from './components/indireta/IndPai'
 // import Contv2 from './components/ContadorV2'
 // import Plataforma from './components/Diferenciar'
-import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
+// import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 
 export default function(){
   return (
-  <SafeAreaView style={GlobalStyles.androidSafeArea}>
+  <SafeAreaView style={GlobalStyles.App}>
   <View>
       
-      <ListaProdutosV2 />
-
+      <FlexboxV1 />
       {/* <Titulo principal='Cadastro Produto' secundario = 'Tela de cadastro do Produto'/>
+      <DigiteSeuNome />
+      <ListaProdutosV2 />
       <ListaProdutos />
     <Usuariologado usuario={  {nome: 'Gui', email: 'gui@gui.com'}  }/>
     <Usuariologado usuario={  {nome: 'Gui'}  }/>
@@ -56,10 +59,12 @@ export default function(){
 
 
   const style = StyleSheet.create({
-    App: {
+
+      App2: {
         padding: 20,
-        alignItems: 'center',
-    }
+        justifyContent: 'center'
+      }
+
   })
 
 }
