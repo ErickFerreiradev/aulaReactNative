@@ -14,11 +14,12 @@ export default StyleSheet.create({
     },
 
     App: {
-        padding: 20,
+        flexGrow: 1,
+        backgroundColor: 'grey',
         justifyContent: 'center',
         alignItems: 'center',
-      }
-
+        paddingTop: Platform.OS === 'android' ? 50 : 0,
+      },
 
 })
 

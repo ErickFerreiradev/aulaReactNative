@@ -2,7 +2,8 @@ import React from 'react'
 import { Text, SafeAreaView, StyleSheet, View } from 'react-native'
 import GlobalStyles from './components/GlobalStyles'
 
-import FlexboxV1 from './components/layouts/FlexboxV1'
+import Mega from './components/mega/mega'
+// import FlexboxV4 from './components/layouts/FlexboxV4'
 // import DigiteSeuNome from './components/DigiteSeuNome'
 // import Usuariologado from './components/Usuariologado'
 // import Familia from './components/relacao/Familia'
@@ -25,8 +26,9 @@ export default function(){
   <SafeAreaView style={GlobalStyles.App}>
   <View>
       
-      <FlexboxV1 />
+      <Mega qtdNumeros={7}/>
       {/* <Titulo principal='Cadastro Produto' secundario = 'Tela de cadastro do Produto'/>
+      <FlexboxV4 />
       <DigiteSeuNome />
       <ListaProdutosV2 />
       <ListaProdutos />
@@ -62,7 +64,8 @@ export default function(){
 
       App2: {
         padding: 20,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        alignItems: 'center'
       }
 
   })
